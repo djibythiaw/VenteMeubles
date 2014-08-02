@@ -1,0 +1,4 @@
+vm_meubles:
+    resource: "@VmMeublesBundle/Resources/config/routing.yml"
+    prefix:   /
+
