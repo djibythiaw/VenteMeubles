@@ -1,3 +1,0 @@
-[submodule "vendor/friendsofsymfonyuser-bundleFOSUserBundle"]
-	path = vendor/friendsofsymfonyuser-bundleFOSUserBundle
-	url = https://github.com/FriendsOfSymfony/FOSUserBundle
