@@ -1,5 +1,27 @@
-{% extends "FOSUserBundle::layout.html.twig" %}
+{% extends '::base.html.twig' %}
 
-{% block fos_user_content %}
-{% include "FOSUserBundle:Registration:register_content.html.twig" %}
-{% endblock fos_user_content %}
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<section id="form"><!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="login-form"><!--login form-->
+
+                    <h2>Création d'un compte</h2>
+
+                    {% block fos_user_content %}
+                    {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+                    {% endblock fos_user_content %}
+
+                </div>
+            </div>
+
+            <div class="col-sm-6" style="text-align: right; margin-top: 100px">
+                <img src="{{ asset('images/login.png') }}" alt="" />
+            </div>
+        </div>
+    </div>
+</section><!--/form-->
+{% endblock %}
