@@ -1,3 +1,11 @@
 vm_meubles_homepage:
     path:     /
     defaults: { _controller: VmMeublesBundle:Default:index }
+
+vm_meubles_shop:
+    path:     /shop
+    defaults: { _controller: VmMeublesBundle:Default:shop }
+
+vm_meubles_details:
+    path:     /details
+    defaults: { _controller: VmMeublesBundle:Default:details }

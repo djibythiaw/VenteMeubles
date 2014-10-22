@@ -123,14 +123,13 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Accueil</a></li>
+								<li><a href="{{ path('vm_meubles_homepage') }}" class="active">Accueil</a></li>
 								<li class="dropdown"><a href="#">Boutique<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Produits</a></li>
-										<li><a href="product-details.html">Details Produits</a></li> 
+                                        <li><a href="{{ path('vm_meubles_shop') }}">Produits</a></li>
+										<li><a href="{{ path('vm_meubles_details') }}">Details Produits</a></li>
 										<li><a href="checkout.html">Commander</a></li> 
 										<li><a href="cart.html">Panier</a></li> 
-										<li><a href="login.html">Se connecter</a></li> 
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
