@@ -95,8 +95,8 @@
                                     <li><a href="{{ path('fos_user_profile_show') }}"><i class="fa fa-user"></i> Compte</a></li>
                                 {% endif %}
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Commander</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Panier</a></li>
+								<li><a href="#"><i class="fa fa-crosshairs"></i> Commander</a></li>
+								<li><a href="{{ path('vm_meubles_cart') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
                                 {% if app.user == NULL %}
                                     <li><a href="{{ path('fos_user_security_login') }}"><i class="fa fa-lock"></i> Se connecter</a></li>
                                 {% else %}
@@ -128,14 +128,14 @@
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="{{ path('vm_meubles_shop') }}">Produits</a></li>
 										<li><a href="{{ path('vm_meubles_details') }}">Details Produits</a></li>
-										<li><a href="checkout.html">Commander</a></li> 
-										<li><a href="cart.html">Panier</a></li> 
+										<li><a href="#">Commander</a></li>
+										<li><a href="{{ path('vm_meubles_cart') }}">Panier</a></li>
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Liste Articles</a></li>
-										<li><a href="blog-single.html">Dernier Article</a></li>
+                                        <li><a href="#">Liste Articles</a></li>
+										<li><a href="#">Dernier Article</a></li>
                                     </ul>
                                 </li> 
 								<li><a href="contact-us.html">Contact</a></li>

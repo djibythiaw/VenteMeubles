@@ -9,3 +9,7 @@ vm_meubles_shop:
 vm_meubles_details:
     path:     /details
     defaults: { _controller: VmMeublesBundle:Default:details }
+
+vm_meubles_cart:
+    path:     /cart
+    defaults: { _controller: VmMeublesBundle:Default:cart }

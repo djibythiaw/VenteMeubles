@@ -20,4 +20,9 @@ class DefaultController extends Controller
     {
         return $this->render('VmMeublesBundle:Vm:product-details.html.twig');
     }
+
+    public function cartAction()
+    {
+        return $this->render('VmMeublesBundle:Vm:cart.html.twig');
+    }
 }
